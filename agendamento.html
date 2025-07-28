@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento</h1>
+    <form id="agendamentoForm">
+     
+      <input type="text" id="clienteNome" placeholder="Seu nome" required>
+      <input type="date" id="data" required>
+      <input type="time" id="hora" required>
+      <input type="text" id="motivo" placeholder="Motivo" required>
+      <button type="submit">Agendar</button>
+    </form>
+    <button onclick="logout()">Sair</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

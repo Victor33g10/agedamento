@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Dono</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamentos</h1>
+    <input type="date" id="filtroData">
+    <input type="text" id="buscaNome" placeholder="Buscar cliente...">
+    <ul id="listaAgendamentos"></ul>
+    <canvas id="graficoAgendamentos" width="400" height="200"></canvas>
+    <button onclick="logout()">Sair</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

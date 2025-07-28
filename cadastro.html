@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+    /* Faz o body ocupar a tela toda com flex */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+      padding: 40px;
+      text-align: center;
+    }
+
+    input, button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    /* Footer estilizado */
+    .footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+  </style>
+<body>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <form id="cadastroForm">
+      <input type="text" id="cadastroUsuario" placeholder="Usuário" required>
+      <input type="password" id="cadastroSenha" placeholder="Senha" required>
+      <select id="cadastroTipo">
+        <option value="cliente">Cliente</option>
+        <option value="dono">Dono</option>
+      </select>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem conta? <a href="index.html">Faça login</a></p>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 site criando por victor gabriel. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
