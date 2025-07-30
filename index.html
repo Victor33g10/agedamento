@@ -2,58 +2,124 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ESSENCIAL -->
   <title>Login</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Faz o body ocupar a tela toda com flex */
     html, body {
       height: 100%;
       margin: 0;
-      display: flex;
-      flex-direction: column;
+      padding: 0;
+      overflow-x: hidden; /* Impede rolagem lateral */
+      font-family: Arial, sans-serif;
     }
 
     .container {
-      flex: 1; /* Faz o conteúdo ocupar o espaço restante */
-      padding: 40px;
+      flex: 1;
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
     }
 
     input, button {
       display: block;
       margin: 10px auto;
-      padding: 10px;
-      width: 80%;
-      max-width: 300px;
+      padding: 12px;
+      width: 90%;
+      max-width: 320px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
 
-    /* Footer estilizado */
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 0.95em;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
     .footer {
       background-color: #111;
       color: #fff;
       padding: 20px 0;
       text-align: center;
+      display: flex; 
+      flex-direction: column;
     }
 
     .footer-container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 20px;
+      display: flex; 
+      flex-direction: column;
     }
 
     .footer-links {
       margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     .footer-links a {
       color: #ccc;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 5px 10px;
       transition: color 0.3s;
     }
 
     .footer-links a:hover {
       color: #fff;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6em;
+      }
+
+      input, button {
+        width: 100%;
+        font-size: 1em;
+      }
+
+      .footer-container {
+        padding: 0 10px;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-links a {
+        margin: 5px 0;
+      }
     }
   </style>
 </head>
@@ -69,7 +135,7 @@
   </div>
 
   <footer class="footer">
-    <div class="footer-container">
+    <div style="display: flex; flex-direction: column; min-height: 37vh;" class="footer-container">
       <p>&copy; 2025 site criando por victor gabriel. Todos os direitos reservados.</p>
       <div class="footer-links">
         <a href="termo-de-uso.html">Termos de Uso</a>
