@@ -1,17 +1,23 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ESSENCIAL -->
   <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ESSENCIAL -->
   <link rel="stylesheet" href="style.css">
   <style>
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      overflow-x: hidden; /* Impede rolagem lateral */
+      overflow-x: hidden;
       font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
@@ -34,6 +40,7 @@
       font-size: 1em;
       border-radius: 5px;
       border: 1px solid #ccc;
+      box-sizing: border-box;
     }
 
     button {
@@ -67,16 +74,15 @@
       color: #fff;
       padding: 20px 0;
       text-align: center;
-      display: flex; 
-      flex-direction: column;
     }
 
     .footer-container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 20px;
-      display: flex; 
+      display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     .footer-links {
@@ -135,8 +141,8 @@
   </div>
 
   <footer class="footer">
-    <div style="display: flex; flex-direction: column; min-height: 37vh;" class="footer-container">
-      <p>&copy; 2025 site criando por victor gabriel. Todos os direitos reservados.</p>
+    <div class="footer-container">
+      <p>&copy; 2025 site criado por Victor Gabriel. Todos os direitos reservados.</p>
       <div class="footer-links">
         <a href="termo-de-uso.html">Termos de Uso</a>
         <a href="politica-de-privacidade.html">Política de Privacidade</a>
