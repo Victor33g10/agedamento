@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  min-width: auto;
+  max-width:auto;
   margin: 40px auto;
   background-color: white;
   padding: 30px;
@@ -31,7 +32,7 @@ input, select, button {
 }
 
 button {
-  background-color: #3b5998;
+  background-color: #007BFF;
   color: white;
   border: none;
   cursor: pointer;
@@ -39,11 +40,11 @@ button {
 }
 
 button:hover {
-  background-color: #2d4373;
+  background-color: #007BFF;
 }
 
 a {
-  color: #3b5998;
+  color: #007BFF;
   text-decoration: none;
 }
 
@@ -83,4 +84,28 @@ li {
 
 canvas {
   margin-top: 20px;
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  input, select, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .delete-btn {
+    top: 6px;
+    right: 6px;
+    font-size: 10px;
+    padding: 3px 6px;
+  }
 }

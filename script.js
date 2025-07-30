@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const usuario = document.getElementById('cadastroUsuario').value;
       const senha = document.getElementById('cadastroSenha').value;
       const tipo = document.getElementById('cadastroTipo').value;
-      const dono = tipo === 'cliente' ? prompt('Escolha o dono:') : usuario;
+      const dono = tipo === 'cliente' ? prompt('Escolha o produtor:') : usuario;
       localStorage.setItem(`user_${usuario}`, JSON.stringify({ senha, tipo, dono }));
       alert('Cadastrado com sucesso!');
       window.location.href = 'index.html';
